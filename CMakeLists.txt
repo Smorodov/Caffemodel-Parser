@@ -15,7 +15,7 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
   SOURCE_GROUP("Source Files" FILES ${folder_source})
   SOURCE_GROUP("Header Files" FILES ${folder_header})
 
-  include_directories( protobuf-master/src) 
+  include_directories( protobuf/src) 
 
 # add_definitions(-DPROTOBUF_USE_DLLS)
 # ----------------------------------------------------------------------------  
@@ -27,7 +27,7 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 # ---------------------------------------------------------------------------- 
   TARGET_LINK_LIBRARIES(${PROJ_NAME} debug ${CMAKE_BINARY_DIR}/Debug/libprotobufd.lib optimized ${CMAKE_BINARY_DIR}/Release/libprotobuf.lib)
 
-  add_subdirectory(./protobuf-master/cmake)
+  add_subdirectory(./protobuf/cmake)
 
 
 
